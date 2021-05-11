@@ -1,22 +1,25 @@
 package practice;
 import java.util.Scanner;
-public class problem18 {
-public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
-		int n=sc.nextInt();
-		int a[]=new int[n];
-		int b[]=new int[n];
-		for(int i=0;i<n;i++)
-		{
-			a[i]=sc.nextInt();
-		}
-		System.arraycopy(a,0,b,0,a.length);
-		for(int i=0;i<n;i++)
-		{
-			System.out.print(b[i]);
-		}
-		
 
-}
+public class problem18 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n,sum=0,p;
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		p=n;
+		while(n>0)
+		{
+			sum=sum*10+n%10;
+			n=n/10;
+		}
+		if(p==sum)
+			System.out.println("Given number is a palindrome");
+		else
+			System.out.println("Given number is not a palindrome");
+		sc.close();
+
+	}
+
 }

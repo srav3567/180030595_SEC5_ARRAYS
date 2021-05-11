@@ -1,22 +1,12 @@
 package practice;
-
 import java.util.Scanner;
-
-public class problem17 {
+public class problem7 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n,sum=0;
 		Scanner sc=new Scanner(System.in);
-		n=sc.nextInt();
-		while(n>0)
-		{
-			sum=sum*10+n%10;
-			n=n/10;
-		}
-		System.out.println(sum);
+		char c1 = sc.next().charAt(0);
+		System.out.println(Character.toUpperCase(c1));
 		sc.close();
-
 	}
-
 }

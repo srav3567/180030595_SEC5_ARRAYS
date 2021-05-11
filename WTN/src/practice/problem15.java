@@ -1,20 +1,21 @@
 package practice;
-import java.util.Arrays;
-import java.util.Scanner;
+
+import java.util.*;
 public class problem15 {
-public static void main(String[] args) {
+
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		int n,sum=0;
 		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		int a[]=new int[n];
-		for(int i=0;i<n;i++)
+		n=sc.nextInt();
+		while(n>0)
 		{
-			a[i]=sc.nextInt();
+			sum+=n%10;
+			n=n/10;
 		}
-		Arrays.sort(a);
-		for(int i=0;i<n;i++)
-		{
-			System.out.println(a[i]);
-		}
-}
+		System.out.println(sum);
+		sc.close();
+
+	}
+
 }

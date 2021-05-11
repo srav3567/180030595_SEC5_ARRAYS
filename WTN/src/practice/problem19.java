@@ -1,22 +1,19 @@
 package practice;
-import java.util.Scanner;
 public class problem19 {
-public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
-		int n=sc.nextInt();
-		int a[]=new int[n];
-		int b[]=new int[n];
-		for(int i=0;i<n;i++)
-		{
-			a[i]=sc.nextInt();
-		}
-		System.arraycopy(a,0,b,0,a.length);
-		for(int i=0;i<n;i++)
-		{
-			System.out.print(b[i]);
-		}
-		
 
-}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int c=0;
+		for(int i=1;i<1000 && c<5;i++)
+		{
+			if(i%2==0 && i%3==0 && i%5==0)
+			{
+				System.out.printf(i+" ");
+				i+=29;
+				c+=1;
+			}
+		}
+
+	}
+
 }

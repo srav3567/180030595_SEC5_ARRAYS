@@ -1,20 +1,23 @@
 package practice;
-import java.util.Arrays;
-import java.util.Scanner;
+
+import java.util.*;
 public class problem16 {
-public static void main(String[] args) {
+
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		System.out.println("Please enter an integer number");
+		int n;
 		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		int a[]=new int[n];
-		for(int i=0;i<n;i++)
+		n=sc.nextInt();
+		for(int i=1;i<=n;i++)
 		{
-			a[i]=sc.nextInt();
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print("* ");
+			}
+			System.out.println();
 		}
-		Arrays.sort(a);
-		for(int i=0;i<n;i++)
-		{
-			System.out.println(a[i]);
-		}
-}
+		sc.close();
+	}
+
 }
