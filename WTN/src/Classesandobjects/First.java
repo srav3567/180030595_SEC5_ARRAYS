@@ -3,17 +3,17 @@ package Classesandobjects;
 public class First {
 	double h,w,d;
 
-    First(double width,double height,double depth)
+    First(double wid,double heg,double dep)
    {
-       h=height;
-       w=width;
-       d=depth;
+       h=heg;
+       w=wid;
+       d=dep;
    }
    double volume()
    { 
-	   double v;
-       v=h*w*d;
-       return v;
+	   double vol;
+       vol=h*w*d;
+       return vol;
    }
   
    public static void main(String[] args) {
